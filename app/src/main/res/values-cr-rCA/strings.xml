@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Lab 2</string>
+    <string name="hello_message">Bonjour!</string>
+    <string name="ButtonText">I\'m a button</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="Login">Login Can</string>
+    <string name="Login_Name">login name Can</string>
+    <string name="Password">password Can</string>
+    <string name="Button1">Button 1  Can</string>
+    <string name="Button2">Button 2 Can</string>
+    <string name="Switch">Enable Something  Can</string>
+</resources>
