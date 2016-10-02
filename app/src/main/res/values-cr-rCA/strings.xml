@@ -1,13 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Lab 2</string>
     <string name="hello_message">Bonjour!</string>
     <string name="ButtonText">I\'m a button</string>
     <string name="title_activity_login">LoginActivity</string>
-    <string name="Login">Login Can</string>
-    <string name="Login_Name">login name Can</string>
-    <string name="Password">password Can</string>
-    <string name="Button1">Button 1  Can</string>
-    <string name="Button2">Button 2 Can</string>
-    <string name="Switch">Enable Something  Can</string>
+    <string name="title_listitems_activity">ListItemsActivity</string>
+    <string name="Login">Login</string>
+    <string name="Login_Name">login name</string>
+    <string name="Password">password</string>
+    <string name="Button1">Button 1</string>
+    <string name="Button2">Button 2</string>
+    <string name="Switch">Enable Something</string>
+    <string name="ImageButton">Image Button</string>
+    <string name="LoginButton">Login</string>
+    <string name="dialog_message">Message</string>
+    <string name="cancel">Cancle</string>
+    <string name="dialog_title">Title</string>
+    <string name="ok">OK</string>
 </resources>

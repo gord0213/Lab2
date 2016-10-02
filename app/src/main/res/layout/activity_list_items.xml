@@ -18,12 +18,16 @@
     <CheckBox
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
-        android:text="@string/Button2"/>
+        android:text="@string/Button2"
+        android:id="@+id/CheckBoxButton"/>
     <Switch
-        android:text="@string/Switch"/>
+        android:text="@string/Switch"
+        android:id="@+id/SwitchButton"/>
     <ImageButton
         android:background="@android:drawable/btn_star_big_on"
-        android:labelFor="@string/ImageButton"/>
+        android:labelFor="@string/ImageButton"
+        android:id="@+id/imageButton"
+        android:contentDescription="@string/ImageButton"/>
 
 
 

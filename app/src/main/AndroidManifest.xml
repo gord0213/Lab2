@@ -23,6 +23,10 @@
         <activity android:name=".ListItemsActivity">
 
         </activity>
-    </application>
 
+    </application>
+    <uses-feature android:name="android.hardware.camera" android:required="true"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
 </manifest>

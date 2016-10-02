@@ -24,7 +24,8 @@
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
         android:text="@string/Login_Name"
-        android:labelFor="@string/Login_Name"/>
+        android:labelFor="@string/Login_Name"
+        android:id="@+id/EditText"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -40,5 +41,12 @@
         android:text="@string/Password"
         android:labelFor="@string/Password"
         android:layout_gravity="center_vertical" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:layout_gravity="end" />
 
 </LinearLayout>
