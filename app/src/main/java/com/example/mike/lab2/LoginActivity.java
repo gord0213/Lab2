@@ -11,10 +11,7 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.CompoundButton;
 import android.widget.EditText;
-import android.widget.Switch;
-import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
     protected static final String ACTIVITY_NAME = "LoginActivity";

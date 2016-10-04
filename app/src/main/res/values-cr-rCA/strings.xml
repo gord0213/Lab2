@@ -12,8 +12,8 @@
     <string name="Switch">Enable Something</string>
     <string name="ImageButton">Image Button</string>
     <string name="LoginButton">Login</string>
-    <string name="dialog_message">Message</string>
+    <string name="dialog_message">Would you like to quit?</string>
     <string name="cancel">Cancle</string>
-    <string name="dialog_title">Title</string>
+    <string name="dialog_title">Quit?</string>
     <string name="ok">OK</string>
 </resources>

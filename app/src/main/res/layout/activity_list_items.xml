@@ -19,7 +19,9 @@
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:text="@string/Button2"
-        android:id="@+id/CheckBoxButton"/>
+        android:id="@+id/CheckBoxButton"
+        android:nestedScrollingEnabled="false"
+        android:onClick="onCheckboxClicked" />
     <Switch
         android:text="@string/Switch"
         android:id="@+id/SwitchButton"/>

@@ -23,7 +23,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
-        android:text="@string/Login_Name"
         android:labelFor="@string/Login_Name"
         android:id="@+id/EditText"/>
     <TextView
