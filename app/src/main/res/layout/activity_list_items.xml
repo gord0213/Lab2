@@ -30,8 +30,4 @@
         android:labelFor="@string/ImageButton"
         android:id="@+id/imageButton"
         android:contentDescription="@string/ImageButton"/>
-
-
-
-
 </GridLayout>

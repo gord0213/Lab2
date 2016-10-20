@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class StartActivity extends AppCompatActivity {
     protected static final String ACTIVITY_NAME = "StartActivity";
@@ -17,24 +18,32 @@ public class StartActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start);
 
-        Button button = (Button) findViewById(R.id.button);
 
-        button.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                //LoginActivity.this.startActivity( new Intent(LoginActivity.this, StartActivity.class));
-                Intent intent = new Intent(StartActivity.this, ListItemsActivity.class);
-                startActivityForResult(intent, 5);
-            }
-        });
 
     }
 
+    public void StartChatButtonClicked(View view){
+        Log.i(ACTIVITY_NAME, "User clicked Start Chat");
+        Intent intent = new Intent(StartActivity.this, ChatWindow.class);
+        startActivity(intent);
+    }
+
+
     protected void onActivityResult(int requestCode, int reponseCode, Intent data) {
-        if (requestCode == 5) {
-            Log.i(ACTIVITY_NAME, "Returned to StartActivity.onActivityResult");
-        }else if (requestCode == Activity.RESULT_OK){
-            String messagePassed = data.getStringExtra("Response");
+        if ((requestCode == 5)&&(reponseCode == Activity.RESULT_OK)) {
+            Log.i(ACTIVITY_NAME, "retuned activity result StartActivity");
+            CharSequence text;
+            int duration;
+            Toast toast;
+            try {
+                int messagePassed = data.getIntExtra("Response", 0);
+                duration = Toast.LENGTH_LONG;
+                toast = Toast.makeText(StartActivity.this, messagePassed, duration);
+                toast.show();
+            } catch (Exception e) {
+                Log.d("Crash!!!", e.getMessage());
+            }
+
         }
     }
 
@@ -50,8 +59,19 @@ public class StartActivity extends AppCompatActivity {
         Log.i(ACTIVITY_NAME, "is onStart");
         System.out.print("onStart");
         super.onStart();
+        Button button = (Button) findViewById(R.id.button);
 
+        button.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                //LoginActivity.this.startActivity( new Intent(LoginActivity.this, StartActivity.class));
+                Intent intent = new Intent(StartActivity.this, ListItemsActivity.class);
+                startActivityForResult(intent, 5);
+            }
+        });
     }
+
+
     @Override
     protected void onPause(){
         Log.i(ACTIVITY_NAME, "is onPause");

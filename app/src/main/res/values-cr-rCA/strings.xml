@@ -16,4 +16,9 @@
     <string name="cancel">Cancle</string>
     <string name="dialog_title">Quit?</string>
     <string name="ok">OK</string>
+    <string name="SCButton">Start Chat</string>
+    <string name="SendButton">Send</string>
+    <string name="responseToast">Mes informations à partager</string>
+    <string name="switchOff">Switch is OFF</string>
+    <string name="switchOn">Switch is ON</string>
 </resources>

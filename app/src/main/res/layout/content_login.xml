@@ -37,7 +37,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
-        android:text="@string/Password"
+        android:hint="@string/Password"
         android:labelFor="@string/Password"
         android:layout_gravity="center_vertical" />
 
