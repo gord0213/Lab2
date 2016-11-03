@@ -41,7 +41,7 @@ public class ChatDatabaseHelper extends SQLiteOpenHelper {
         ContentValues contentValues = new ContentValues();
         contentValues.put(KEY_MESSAGE, msg);
         long insertResult = db.insert(TABLE_NAME, null, contentValues);
-        Log.i(ACTIVITY_NAME, "insert data resul+: " + insertResult + ", Data inserted: " + msg);
+        Log.i(ACTIVITY_NAME, "insert data resul+: " + insertResult);
     }
 
     public Cursor getData(){

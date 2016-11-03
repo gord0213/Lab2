@@ -33,4 +33,12 @@
         android:layout_below="@+id/button"
         android:layout_alignParentEnd="true"
         android:onClick="StartChatButtonClicked" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_activity_weather_forecast"
+        android:id="@+id/weatherButton"
+        android:onClick="startWeatherForcast"
+        android:layout_below="@+id/button3"
+        android:layout_toEndOf="@+id/button" />
 </RelativeLayout>
