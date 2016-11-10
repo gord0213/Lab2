@@ -42,7 +42,7 @@ public class WeatherForecast extends AppCompatActivity {
 
         progress = (ProgressBar)findViewById(R.id.progressBar);
         progress.setVisibility(View.VISIBLE);
-
+        progress.setMax(100);
         weatherImage = (ImageView)findViewById(R.id.CurrentWeather);
         currentTempText = (TextView) findViewById(R.id.CurrentTemp);
         minTempText = (TextView) findViewById(R.id.minTemp);
@@ -62,7 +62,7 @@ public class WeatherForecast extends AppCompatActivity {
         @Override
         protected String doInBackground(String... args){
             InputStream stream;
-
+            try {
             //checking network connectivity
             ConnectivityManager connMgr = (ConnectivityManager)getSystemService(Context.CONNECTIVITY_SERVICE);
             NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
@@ -72,7 +72,7 @@ public class WeatherForecast extends AppCompatActivity {
             else{ Log.e(ACTIVITY_NAME, "No network connection is available"); }
 
             // connecting to url and reading data input stream
-            try {
+
                 URL url = new URL("http://api.openweathermap.org/data/2.5/weather?q=ottawa,ca&APPID=d99666875e0e51521f0040a3d97d0f6a&mode=xml&units=metric");
                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
                 conn.setReadTimeout(10000); //in milliseconds
@@ -161,9 +161,9 @@ public class WeatherForecast extends AppCompatActivity {
         @Override
         protected void onPostExecute(String args){
             progress.setVisibility(View.INVISIBLE);
-            currentTempText.setText("Current: " + currTemp + "C");
-            minTempText.setText("Min: " + minTemp + "C");
-            maxTempText.setText("Max: " + maxTemp + "C");
+            currentTempText.setText("Current: " + currTemp + "ºC");
+            minTempText.setText("Min: " + minTemp + "ºC");
+            maxTempText.setText("Max: " + maxTemp + "ºC");
             weatherImage.setImageBitmap(bitmap);
         }
 
