@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/actionHome"
+        android:title="Home"
+        android:icon="@drawable/dragonfilled"
+        android:orderInCategory="100"
+        app:showAsAction="always"/>
+    <item android:id="@+id/actionExit"
+        android:title="Exit"
+        android:icon="@drawable/informationfilled"
+        android:orderInCategory="200"
+        app:showAsAction="always"/>
+    <item android:id="@+id/actionEdit"
+        android:title="Edit"
+        android:icon="@drawable/maracasfilled"
+        android:orderInCategory="300"
+        app:showAsAction="always"/>
+    <item android:id="@+id/actionAbout"
+        android:title="About"
+        android:orderInCategory="400"
+        app:showAsAction="always"/>
+</menu>

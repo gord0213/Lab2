@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -11,7 +12,7 @@ import android.widget.Toast;
 
 public class StartActivity extends AppCompatActivity {
     protected static final String ACTIVITY_NAME = "StartActivity";
-    private Button viewWeatherButton;
+    private Button viewWeatherButton, startToolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         Log.i(ACTIVITY_NAME, "is onCreate");
@@ -27,6 +28,15 @@ public class StartActivity extends AppCompatActivity {
                 Intent weatherIntent = new Intent(getApplicationContext(), WeatherForecast.class);
                 Log.i(ACTIVITY_NAME, "Go to weather forcast");
                 startActivity(weatherIntent);
+            }
+        });
+        startToolbar = (Button) findViewById(R.id.testToolbar);
+        startToolbar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent toolBarIntent = new Intent(getApplicationContext(), TestToolbar.class);
+                Log.i(ACTIVITY_NAME, "Going to test Tool Bar");
+                startActivity(toolBarIntent);
             }
         });
 

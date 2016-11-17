@@ -24,4 +24,8 @@
     <string name="title_activity_weather_forecast">WeatherForecast</string>
     <string name="title_message_list">Messages</string>
     <string name="title_message_detail">Message Detail</string>
+    <string name="title_activity_test_toolbar">TestToolbar</string>
+    <string name="new_message">New Message</string>
+    <string name="change_message">Change Message</string>
+    <string name="back">go Back</string>
 </resources>
